@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./tic-tac-toe.component.css'],
 })
 export class TicTacToeComponent {
+  contador = 0;
+  noWin: boolean = false;
   currentPlayer: string = 'O';
   winner: string = '';
   board: string[][] = [
